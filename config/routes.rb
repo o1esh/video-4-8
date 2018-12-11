@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
-  root 'posts#index', as: 'home'
+  root 'posts#index'
 
-  get 'about' => 'pages#about', as: 'about'
+  get 'about' => 'pages#about'
+  get 'contakti' => 'pages#contakti'
 
-
-  resources :posts do
-    resources :comments  
-  end
 end
